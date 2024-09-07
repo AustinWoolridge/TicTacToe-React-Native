@@ -1,9 +1,15 @@
 import { TouchableOpacity, Text, StyleSheet } from "react-native";
-import { View } from 'react-native-web';
+import { useState } from 'react';
 
-export default function Square({ value }) {
+export default function Square() {
+    const [value, setValue] = useState(null);
+
+    const handleClick = () => {
+        setValue('X');
+    };
+
     return (
-        <TouchableOpacity style={styles.square}>
+        <TouchableOpacity style={styles.square} onPress={handleClick}>
             <Text style={styles.text}>{value}</Text>
         </TouchableOpacity>
     );
