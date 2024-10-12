@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Board from './components/Board';
+import Game from './components/Game';
 import { Component } from 'react';
 
 export default function App() {
@@ -8,7 +8,7 @@ export default function App() {
         <>
             <View style={styles.container}>
                 <StatusBar style="auto" />
-                <Board></Board>
+                <Game></Game>
             </View>
         </>
     );

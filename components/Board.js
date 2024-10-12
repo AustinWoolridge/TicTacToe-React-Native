@@ -3,9 +3,13 @@ import { View } from 'react-native-web';
 import Square from './Square.js'
 import { useState } from 'react';
 
-export default function Board() {
-    const [squares, setSquares] = useState(Array(9).fill(null));
-    const [xIsNext, setxIsNext] = useState(true);
+// {xIsNext, square, onPlay} is Destructuring. otherwise
+/* export default function Board(props) {
+    const xIsNext = props.xIsNext;
+    const squares = props.squares;
+    const onPlay = props.onPlay;
+*/
+export default function Board({ xIsNext, squares, onPlay }) {
     const winner = calculateWinner(squares);
     let status;
 
@@ -25,13 +29,14 @@ export default function Board() {
         } else {
             nextSquares[i] = "O";
         }
-        setSquares(nextSquares);
-        setxIsNext(!xIsNext);
+        onPlay(nextSquares);
     };
 
     return (
         <>
-            <View>{status}</View>
+            <View>
+                <Text>{status}</Text>
+            </View>
             {/* Board row 1 */}
             <View style={styles.boardRow}>
                 <Square value={squares[0]} onSquareClick={() => handleClick(0)}></Square>
