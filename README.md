@@ -17,7 +17,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/AustinWoolridge/TicTacToe-React-Native">
-    <img src="/public/TicTacToe-React-Native-icon.jpeg" alt="Logo" width="80" height="80">
+    <img src="/public/TicTacToe-React-Native-icon.jpg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">TicTacToe</h3>
