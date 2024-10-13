@@ -208,7 +208,7 @@ Project Link: [https://github.com/AustinWoolridge/TicTacToe-React-Native](https:
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
+* [Material Design for React Native (Android & iOS)](https://reactnativepaper.com/)
 * []()
 * []()
 
