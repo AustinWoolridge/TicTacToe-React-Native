@@ -1,7 +1,8 @@
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { TouchableOpacity, StyleSheet } from 'react-native';
 import { View } from 'react-native-web';
 import Square from './Square.js'
 import { useState } from 'react';
+import { Text } from 'react-native-paper';
 
 // {xIsNext, square, onPlay} is Destructuring. otherwise
 /* export default function Board(props) {
@@ -35,7 +36,7 @@ export default function Board({ xIsNext, squares, onPlay }) {
     return (
         <>
             <View>
-                <Text>{status}</Text>
+                <Text variant="headlineMedium" >{status}</Text>
             </View>
             {/* Board row 1 */}
             <View style={styles.boardRow}>

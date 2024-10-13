@@ -2,6 +2,7 @@ import { Component, useState } from "react";
 import Board from "./Board";
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { View } from 'react-native-web';
+import { Button } from "react-native-paper";
 
 export default function Game() {
     const [xIsNext, setxIsNext] = useState(true);
@@ -25,9 +26,9 @@ export default function Game() {
 
                 </View>
                 <View>{/*Game Info */}
-                    <TouchableOpacity onPress={takeToStart}>
-                        <Text>Restart Game</Text>
-                    </TouchableOpacity>
+                    <Button mode="contained" icon="refresh" rippleColor="black" onPress={takeToStart}>
+                        Restart Game
+                    </Button>
 
                 </View>
             </View>

@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
         borderColor: '#333',
         alignItems: 'center',
         justifyContent: 'center',
+        backgroundColor: '#00BFFF',
     },
 
     text: {
